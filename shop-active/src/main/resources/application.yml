@@ -1,0 +1,14 @@
+dubbo:
+  application:
+    id: shop-active
+    name: shop-active
+  registry:
+    address: zookeeper://localhost
+    port: 2181
+  protocol:
+    server: true
+    name: dubbo
+    port: 20882
+  consumer:
+    check: false
+

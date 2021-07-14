@@ -1,0 +1,21 @@
+server:
+  port: 8085
+dubbo:
+  application:
+    id: shop-admin
+    name: shop-admin
+  registry:
+    address: zookeeper://127.0.0.1
+    port: 2181
+  protocol:
+    name: dubbo
+    port: 20880
+  consumer:
+    check: false
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/testdata?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456

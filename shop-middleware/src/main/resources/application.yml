@@ -1,0 +1,33 @@
+server:
+  port: 8079
+
+dubbo:
+  application:
+    id: shop-middleware
+    name: shop-middleware
+  registry:
+    address: zookeeper://localhost
+    port: 2181
+  protocol:
+    server: true
+    name: dubbo
+    port: 20880
+  consumer:
+    check: false
+
+elasticsearch:
+  host: 127.0.0.1
+  port: 9200
+
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/testdata?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
