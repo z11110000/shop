@@ -6,7 +6,6 @@ import com.shop.common.entity.base.Constant;
 import com.shop.common.entity.user.LoginUserInfo;
 import com.shop.middleware.cache.RedisCache;
 import com.shop.user.service.TokenService;
-import io.jsonwebtoken.Jwt;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.slf4j.Logger;

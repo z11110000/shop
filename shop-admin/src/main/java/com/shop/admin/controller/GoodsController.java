@@ -4,8 +4,8 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.shop.goods.service.GoodsService;
 import com.shop.common.entity.goods.GoodsInfo;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @version $Id: GoodsController.java,v 0.1 2021/7/2 14:38  Exp $
  */
 @RestController
-@ResponseBody
 @RequestMapping("/goods")
 public class GoodsController {
 
@@ -26,7 +25,7 @@ public class GoodsController {
         return goodsService.getGoodsInfo("111");
     }
 
-    @GetMapping("/addGoodsInfo")
+    @PostMapping("/addGoodsInfo")
     public GoodsInfo addGoodsInfo(){
 
         return goodsService.addGoodsInfo(null);

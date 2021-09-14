@@ -14,16 +14,14 @@ import com.shop.user.service.UserService;
 import eu.bitwalker.useragentutils.UserAgent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 用户控制器
  */
-@Controller
-@ResponseBody
+@RestController
 @RequestMapping("/user")
 public class UserController {
 
